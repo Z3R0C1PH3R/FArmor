@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FArmor | Intent-Aware Payment Executor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-violet"></div>
+    <div class="bg-orb orb-cyan"></div>
+
+    <header class="nav-pill reveal">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">FArmor</span>
+      </div>
+      <nav>
+        <a href="#demo">Demo</a>
+        <a href="#features">Capabilities</a>
+        <a href="#report">Report</a>
+      </nav>
+      <a class="cta" href="#demo">Run Live</a>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="hero">
+        <p class="eyebrow">INTENT-AWARE PAYMENT DEMONSTRATION</p>
+        <h1>
+          Intent-Aware
+          <br />
+          Payment
+          <span class="shimmer">Executor</span>
+        </h1>
+        <p class="subtext">
+          A deterministic system where reasoning is separated from action, policies are enforced
+          at runtime, and every allowed transaction writes a verifiable receipt on disk.
+        </p>
+        <div class="hero-actions">
+          <button id="run-default" class="shiny-btn">
+            <span>Run Default Scenario</span>
+          </button>
+          <a href="#demo" class="secondary-link">Inspect live policy decisions</a>
+        </div>
+      </section>
+
+      <section class="ticker-wrap" aria-label="live metrics">
+        <div class="ticker">
+          <span>ENFORCEMENT MODE</span><strong>DETERMINISTIC</strong>
+          <span>REASONING LAYER</span><strong>SANDBOXED</strong>
+          <span>EXECUTION PROOF</span><strong>LOCAL RECEIPTS</strong>
+          <span>LIMIT CHECK</span><strong class="accent-v">ACTIVE</strong>
+          <span>VENDOR CHECK</span><strong class="accent-c">ACTIVE</strong>
+          <span>DELEGATION BOUNDS</span><strong class="accent-e">ENFORCED</strong>
+          <span>ENFORCEMENT MODE</span><strong>DETERMINISTIC</strong>
+          <span>REASONING LAYER</span><strong>SANDBOXED</strong>
+        </div>
+      </section>
+
+      <section id="features" class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="icon-box">01</div>
+          <h3>Strict Intent Schema</h3>
+          <p>
+            Natural language is parsed into a fixed intent model. No execution happens before
+            structure is validated.
+          </p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="icon-box">02</div>
+          <h3>Visible Enforcement Firewall</h3>
+          <p>
+            Policy checks for amount, vendor, and initiator run deterministically and return
+            explicit blocking reasons.
+          </p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="icon-box">03</div>
+          <h3>Provable Execution</h3>
+          <p>
+            Allowed actions create physical receipt files on local disk with UTC timestamps and
+            transaction fields.
+          </p>
+        </article>
+      </section>
+
+      <section id="demo" class="demo-shell reveal">
+        <div class="window-top">
+          <div class="lights">
+            <span></span><span></span><span></span>
+          </div>
+          <p>farmor.executor.demo</p>
+          <button id="copy-last" title="Copy response">Copy</button>
+        </div>
+        <div class="demo-grid">
+          <div class="left-panel">
+            <label for="policy-select">Policy</label>
+            <select id="policy-select"></select>
+
+            <label for="request-input">Natural Language Request</label>
+            <textarea id="request-input" rows="5"></textarea>
+
+            <div class="example-row">
+              <button class="example-btn" data-example="0">Allowed Example</button>
+              <button class="example-btn" data-example="1">Blocked Limit</button>
+              <button class="example-btn" data-example="2">Delegation Fail</button>
+            </div>
+
+            <button id="execute-btn" class="shiny-btn block">
+              <span>Execute Through Armor Layer</span>
+            </button>
+          </div>
+
+          <pre class="code-panel" id="response-panel">// Waiting for execution...</pre>
+        </div>
+      </section>
+
+      <section id="report" class="report-strip reveal">
+        <div>
+          <p class="eyebrow">Submission Coverage</p>
+          <h2>Architecture Diagram + Short Report Included</h2>
+          <p>
+            Open <code>docs/architecture.md</code> and <code>docs/short-report.md</code> for
+            ready-to-submit hackathon assets.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot-grid">
+        <div>
+          <p class="brand-foot">FArmor</p>
+          <p>Intent-aware execution, not blind automation.</p>
+        </div>
+        <div>
+          <h4>Models</h4>
+          <p>Intent</p>
+          <p>Policy</p>
+        </div>
+        <div>
+          <h4>Layers</h4>
+          <p>Reasoning</p>
+          <p>Enforcement</p>
+          <p>Execution</p>
+        </div>
+        <div>
+          <h4>Artifacts</h4>
+          <p>Receipts</p>
+          <p>Architecture</p>
+          <p>Short Report</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>Copyright 2026 FArmor Team</span>
+        <span class="status"><i></i>All Systems Operational</span>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

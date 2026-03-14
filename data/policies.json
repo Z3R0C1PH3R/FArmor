@@ -1,0 +1,12 @@
+{
+  "default": {
+    "max_transaction_limit": 500,
+    "allowed_vendors": ["AWS", "Azure", "GitHub", "Cloudflare"],
+    "allowed_initiators": ["Finance Manager", "DevOps Bot", "Engineer"]
+  },
+  "delegated_bot": {
+    "max_transaction_limit": 100,
+    "allowed_vendors": ["AWS", "GitHub"],
+    "allowed_initiators": ["Bot"]
+  }
+}

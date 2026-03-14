@@ -1,0 +1,8 @@
+FArmor Payment Receipt
+=======================
+timestamp_utc=2026-03-14T23:32:36.105063+00:00
+vendor=AWS
+amount=50
+initiator_role=Bot
+justification=delegated hosting request
+status=EXECUTED

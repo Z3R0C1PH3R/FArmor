@@ -1,0 +1,8 @@
+FArmor Payment Receipt
+=======================
+timestamp_utc=2026-03-14T23:09:12.890854+00:00
+vendor=AWS
+amount=400
+initiator_role=DevOps Bot
+justification=hosting
+status=EXECUTED
