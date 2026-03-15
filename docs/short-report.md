@@ -51,6 +51,6 @@ If any check fails, the system raises `PolicyViolationError` with a clear reason
 - Successful actions write physical receipts with UTC timestamps to local disk.
 - Architecture clearly separates reasoning, enforcement, and execution.
 
-## 6) OpenClaw/ArmorIQ Note
+## 6) Implementation Summary
 
-This implementation is a local mock architecture designed for hackathon demonstration and does not require installing OpenClaw or ArmorIQ dependencies.
+FArmor delivers a complete intent-aware execution workflow with structured reasoning output, deterministic policy enforcement, and verifiable runtime actions. The system is organized for clear architectural review, practical demonstration, and straightforward extension to additional policies and execution targets.

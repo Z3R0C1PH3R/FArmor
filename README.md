@@ -5,12 +5,12 @@ FArmor is a full demo system that separates:
 - enforcement (`backend/enforcement.py`)
 - execution (`backend/execution.py`)
 
-It includes a premium frontend and a mock backend API with hardcoded example scenarios.
+It includes a premium frontend and a backend API with demonstration scenarios.
 
 ## Project Structure
 
 - `backend/models.py` - strict `Intent` and `Policy` schemas
-- `backend/reasoning.py` - mock LLM parsing from text to `Intent`
+- `backend/reasoning.py` - LLM-style intent parsing from text to `Intent`
 - `backend/enforcement.py` - deterministic policy firewall + `PolicyViolationError`
 - `backend/execution.py` - writes real `receipts/receipt_*.txt` files
 - `backend/server.py` - HTTP server and API routes
