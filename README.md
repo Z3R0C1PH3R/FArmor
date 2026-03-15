@@ -49,10 +49,3 @@ curl -s -X POST http://127.0.0.1:8080/api/execute \
   -d '{"policy_name":"default","request_text":"I am the DevOps Bot, pay $400 to AWS for hosting."}'
 ```
 
-## Why This Fits The Hackathon Rules
-
-- Clear reasoning vs execution separation
-- Explicit runtime policy enforcement
-- Deterministic blocking with visible reasons
-- Real local system side effect (receipt files)
-- Includes bounded delegation scenario
